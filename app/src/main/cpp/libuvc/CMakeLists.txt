@@ -175,7 +175,7 @@ install(EXPORT libuvcTargets
   DESTINATION ${CMAKE_INSTALL_CMAKEDIR}
 )
 
-install(FILES 
+install(FILES
     cmake/FindLibUSB.cmake
     cmake/FindJpegPkg.cmake
   DESTINATION ${CMAKE_INSTALL_CMAKEDIR}
@@ -192,7 +192,7 @@ install(FILES
 )
 
 if(JPEG_FOUND)
-  # If we have used JPEG library we need to 
+  # If we have used JPEG library we need to
   # add linker flag for it in config file for pkgconfig
   set(PKGCONFIG_JPEG_LDFLAG "-ljpeg")
 endif()
